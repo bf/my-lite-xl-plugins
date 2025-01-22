@@ -5,7 +5,7 @@ local common = require "core.common"
 local config = require "core.config"
 
 -- returns true if file exists
-function file_exists(name)
+local function file_exists(name)
    local f <close> = io.open(name, "r")
    return f ~= nil
 end
